@@ -136,12 +136,16 @@ img {
 /* ---------hero-baner ------ */
 
 .hero-baner {
-        background: #2e2f42;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
         padding: 188px 0;
         text-align: center;
-       
-
-
+        max-width: 1440px auto;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
 }
 
 .hero-baner-title {
@@ -152,7 +156,6 @@ img {
         color: #fff;
         margin: 0 auto 48px;
         max-width: 496px;
-        text-align: center;
 }
 
 .hero-baner-btn {
@@ -194,6 +197,13 @@ img {
 .advantages-list-item {
         width: calc((100% - 72px) / 4)
 }
+.advantages-list-icon {
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        padding: 24px 100px;
+        background: #f4f4fd;
+        box-sizing: content-box;
+}
 .advantages-list-item-text {
         font-weight: 400;
         font-size: 16px;
@@ -226,6 +236,18 @@ img {
 .team-list-item-text {
         text-align: center;
 }
+.container-team-icon {
+        display: flex;
+        justify-content: space-around;
+}
+.team-icon-link {
+        display: flex;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        padding: 12px;
+        max-width: 40px;
+}
+
 
 /* < !-/*------------ Our Portfolio /*-------------> */
 
@@ -243,12 +265,20 @@ img {
         border-right: 1px solid #e7e9fc;
         padding: 32px 16px;
 }
+.container-list:hover {
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+        cursor: pointer;
+}
 
 
 /*----------- footer-------------- */
 .footer {
         background: #2e2f42;
         padding: 100px 0;
+}
+.container-footer {
+        display: flex;
 }
 
 .footer-logo {
@@ -273,4 +303,20 @@ img {
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
+}
+.container-logo {
+        margin-right: 120px;
+}
+.icon-social-links {
+        max-width: 208px;
+        display: flex;
+        gap: 16px;
+}
+.footer-text-social {
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 16px;
+}
+.footer-icon{
+        padding: 8px;
 }
